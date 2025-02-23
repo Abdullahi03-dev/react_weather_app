@@ -78,6 +78,10 @@
 	.landing div img{
 	margin: 2em 0;
 }
+.landing div img{
+	width: 190px;
+	height: 190px;
+}
 .landing div a{
 	width: 350px;
 	margin-top:10px;

@@ -9,9 +9,10 @@ import temprature from '../assets/image/temperature.svg'
 import rain from '../assets/image/rain1.svg'
 import humidity from '../assets/image/humidity.svg'
 import cancel from '../assets/image/cancel.svg'
-import deleteBtn from '../assets/image/delete.png'
+// import deleteBtn from '../assets/image/delete.png'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 
 
@@ -67,11 +68,17 @@ useEffect(()=>{
       }
       catch(error){
         setError(error)
+        
       }
       
     }
+    if(error){
+      toast.error(error)
+    }
   }
   ShowWeather()
+  
+
 },[trigger])
       
 
@@ -117,7 +124,7 @@ useEffect(()=>{
 
     <section className="landing2">
       <div>
-        <img src={weathericon2} />
+        <img src={weathericon2} className='banner_img'/>
         <h4 id="date">{showDate}</h4>
         <h1 id="temp">{temp}<sup>0</sup>C</h1>
         <div className="props">

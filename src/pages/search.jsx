@@ -12,7 +12,7 @@ import cancel from '../assets/image/cancel.svg'
 import deleteBtn from '../assets/image/delete.png'
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import toast ,{Toaster} from "react-hot-toast"
+import toast  from "react-hot-toast"
 
 const Search=()=>{
     const [temp,setTemp]=useState('')
@@ -47,6 +47,9 @@ const Search=()=>{
       setHistory([])
     }
     const fetchData=async ()=>{
+      if(city==''){
+        toast.error('WRITE A CITY NAME')
+      }
         if(city){
       const apiKey = 'bec2caaeeb1f2422770f48f49e975a86';
       const apiUrl = 'https://api.openweathermap.org/data/2.5/weather'; 
@@ -71,7 +74,8 @@ const Search=()=>{
       }
       catch(error){
                 setError(error)
-            }
+                toast.error(error)
+            } 
         }
     }
 return(
@@ -122,7 +126,7 @@ return(
 
           <div>
             <img src={temprature} />
-            <h3 id="temp1">{temp+1}<sup>0</sup>C</h3>
+            <h3 id="temp1">{temp}<sup>0</sup>C</h3>
             <p>Temp</p>
           </div>
 

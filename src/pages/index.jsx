@@ -25,7 +25,7 @@ const index=()=>{
     <>
     <section className="landing">
       <div>
-        <img src={weathericon}/>
+        <img src={weathericon} className='banner_img'/>
         <h3>Daily Weather</h3>
         <p>Get to know your weather maps and rader precipitation forecast</p>
         <div className="utils">

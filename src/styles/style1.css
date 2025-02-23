@@ -52,11 +52,11 @@
 	transition: opacity 1.2s ease,filter 1.2s ease;
 	pointer-events: none;
 	position: absolute;
-	top: 6px;
+	top: 0;
 	left: 0;
 	z-index: 1000000;
 	background-color: #12172a;
-	width: 30%;
+	width: 70%;
 	height: 100vh;
 	padding: 20px ;
 	padding-top: 6rem;
@@ -154,7 +154,7 @@
 }
 @media(max-width: 770px){
 	.landing2{
-		height: 100vh;
+		height: 110vh;
 	}
 	.sideBar1 .cancelSpan{
 	top: 45px;
@@ -165,12 +165,12 @@
 	padding-top: 1.3rem;
 }
 	.sideBar{
-		top:20px;
+		top:30px;
 		border-radius:0 10px 10px 0;
 		height: 95vh;
 		padding:0 20px;
 		padding-top: 6rem;
-		width: 80%;
+		width: 95%;
 	}
 }
 .landing2 div{
@@ -240,7 +240,7 @@
 }
 .bottom_nav{
 	position: fixed;
-	bottom: 2.5em;
+	bottom: 2em;
 	left: 50%;
 	transform: translateX(-50%);
 	/*left: 0;*/
@@ -275,7 +275,13 @@
 }
 .props div{
 	margin: 0 10px;
-
+}
+.landing2  .banner_img{
+	width: 200px;
+	height: 200px;
+}
+.landing2>div{
+	margin-top: -6em;
 }
 }
 
@@ -290,6 +296,7 @@
 	-ms-border-radius: 17px;
 	-o-border-radius: 17px;
 	font-size: 15px;
+	outline: none;
 }
 .landing2_div .searchCityBtn{
 	width: 28px;
