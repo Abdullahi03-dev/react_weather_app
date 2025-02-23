@@ -157,15 +157,15 @@
 		height: 110vh;
 	}
 	.sideBar1 .cancelSpan{
-	top: 45px;
-	left: 30px;
+	top:20px;
+	left: 25px;
 }
 .changeLocation{
 	padding-bottom: 1.6rem;
 	padding-top: 1.3rem;
 }
 	.sideBar{
-		top:30px;
+		top:0px;
 		border-radius:0 10px 10px 0;
 		height: 95vh;
 		padding:0 20px;
