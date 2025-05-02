@@ -3,6 +3,9 @@
 	padding: 0;
 	width: 100%;
 }
+.profile_pic{
+	border-radius: 50%;
+}
 .nav_bar{
 	width: 100%;
 	padding-top: 2rem;

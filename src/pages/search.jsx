@@ -3,7 +3,7 @@ import searchbtn from '../assets/image/search.png'
 import menu from '../assets/image/menu.svg'
 import home from '../assets/image/home.png'
 import searchpic from '../assets/image/search.png'
-import profilepic from '../assets/image/play-icon.png'
+import profilepic from '../assets/image/person_4.jpg'
 import weathericon2 from '../assets/image/6126276.png'
 import temprature from '../assets/image/temperature.svg'
 import rain from '../assets/image/rain1.svg'
@@ -108,7 +108,7 @@ return(
       <div>
         <Link to="/home"><img src={home}/></Link>
         <a href="#"><img src={searchpic}/></a>
-        <a href="#"><img src={profilepic} /></a>
+        <a href="#"><img src={profilepic} className='profile_pic'/></a>
       </div>
     </div>
     <section className="landing2">
